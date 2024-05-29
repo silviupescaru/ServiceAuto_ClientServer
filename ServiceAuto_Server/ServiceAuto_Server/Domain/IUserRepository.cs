@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceAuto_Server
+namespace ServiceAuto_Server.Domain
 {
-    internal class Program
+    internal interface IUserRepository
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace ServiceAuto_Client
 {
-    internal static class Program
+    internal static class ProgramClient
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,8 @@ namespace ServiceAuto_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.Run(new Form1());
+
         }
     }
 }

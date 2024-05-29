@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\",
+  "WorkspaceRootPath": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Form1.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\Form1.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Form1.cs [Design]",
-              "RelativeToolTip": "ServiceAuto_Client\\Form1.cs [Design]",
+              "Title": "ProgramClient.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\ProgramClient.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\ProgramClient.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\ProgramClient.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\ProgramClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T06:48:29.041Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-29T18:44:26.671Z",
+              "EditorCaption": ""
             }
           ]
         }

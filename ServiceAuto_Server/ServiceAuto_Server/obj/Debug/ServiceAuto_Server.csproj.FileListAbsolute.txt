@@ -1,0 +1,6 @@
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.csproj.AssemblyReference.cache
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.Domain.Language.string.en.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.Domain.Language.string.fr.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.Domain.Language.string.ru.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.csproj.GenerateResource.cache
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.csproj.CoreCompileInputs.cache
