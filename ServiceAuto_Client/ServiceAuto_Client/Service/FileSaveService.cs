@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceAuto_Server.Domain
+namespace ServiceAuto_Client.Service
 {
-    internal interface IUserRepository
+    internal class FileSaveService
     {
-        bool LoginUser(string username, string password);
     }
 }

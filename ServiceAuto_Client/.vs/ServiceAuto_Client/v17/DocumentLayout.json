@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\service\\excelsaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\service\\excelsaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\service\\wordsaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\service\\wordsaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\service\\filesaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\service\\filesaveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\controller\\controlleremployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\controller\\controlleremployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\controller\\controllermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\controller\\controllermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\controller\\controlleradministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\controller\\controlleradministrator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +43,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ExcelSaveService.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\ExcelSaveService.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Service\\ExcelSaveService.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\ExcelSaveService.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Service\\ExcelSaveService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:38:32.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WordSaveService.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\WordSaveService.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Service\\WordSaveService.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\WordSaveService.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Service\\WordSaveService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:38:19.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileSaveService.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\FileSaveService.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Service\\FileSaveService.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Service\\FileSaveService.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Service\\FileSaveService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:38:08.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControllerEmployee.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerEmployee.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Controller\\ControllerEmployee.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerEmployee.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Controller\\ControllerEmployee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:37:55.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ControllerManager.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerManager.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Controller\\ControllerManager.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerManager.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Controller\\ControllerManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:37:47.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ControllerAdministrator.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerAdministrator.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Controller\\ControllerAdministrator.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerAdministrator.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Controller\\ControllerAdministrator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T17:37:41.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ProgramClient.cs",
               "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\ProgramClient.cs",
               "RelativeDocumentMoniker": "ServiceAuto_Client\\ProgramClient.cs",
