@@ -33,6 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1004\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicrosoftOfficeCore.15.0.0\lib\net35\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ServiceAuto_Server">
+      <HintPath>..\..\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\ServiceAuto_Server.exe</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -54,6 +69,36 @@
     <Compile Include="Service\ExcelSaveService.cs" />
     <Compile Include="Service\FileSaveService.cs" />
     <Compile Include="Service\WordSaveService.cs" />
+    <Compile Include="View\AdministratorGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AdministratorGUI.Designer.cs">
+      <DependentUpon>AdministratorGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\EmployeeGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\EmployeeGUI.Designer.cs">
+      <DependentUpon>EmployeeGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LoginGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LoginGUI.Designer.cs">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ManagerGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ManagerGUI.Designer.cs">
+      <DependentUpon>ManagerGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StatisticsGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StatisticsGUI.Designer.cs">
+      <DependentUpon>StatisticsGUI.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +108,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -76,8 +122,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
