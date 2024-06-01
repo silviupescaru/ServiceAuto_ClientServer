@@ -6,41 +6,59 @@ namespace ServiceAuto_Server.Service
 {
     public class UserServiceHost
     {
+        private ServiceHost _serviceHost;
 
         public UserServiceHost()
         {
+            Console.WriteLine("UserServiceHost initialized.");
+        }
+
+        public void Start()
+        {
             Console.WriteLine("Connecting to Service Auto DB ...");
-            NetTcpBinding tcp = new NetTcpBinding();
-            tcp.OpenTimeout = new TimeSpan(0, 60, 0);
-            tcp.SendTimeout = new TimeSpan(0, 60, 0);
-            tcp.ReceiveTimeout = new TimeSpan(0, 60, 0);
-            tcp.CloseTimeout = new TimeSpan(0, 60, 0);
-            tcp.MaxReceivedMessageSize = System.Int32.MaxValue;
-            tcp.ReaderQuotas.MaxArrayLength = System.Int32.MaxValue;
+            NetTcpBinding tcp = new NetTcpBinding
+            {
+                OpenTimeout = new TimeSpan(0, 60, 0),
+                SendTimeout = new TimeSpan(0, 60, 0),
+                ReceiveTimeout = new TimeSpan(0, 60, 0),
+                CloseTimeout = new TimeSpan(0, 60, 0),
+                MaxReceivedMessageSize = int.MaxValue
+            };
+            tcp.ReaderQuotas.MaxArrayLength = int.MaxValue;
+
             string s = ConfigurationManager.ConnectionStrings["IPAdress"].ConnectionString;
             tcp.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             tcp.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
+
             IUserService userService = new UserService();
-            ServiceHost serviceHost = new ServiceHost(userService);
+            _serviceHost = new ServiceHost(userService);
 
             try
             {
-                serviceHost.AddServiceEndpoint(typeof(IUserService), tcp, "net.tcp://" + s + ":52001/User");
-                serviceHost.Open();
+                _serviceHost.AddServiceEndpoint(typeof(IUserService), tcp, "net.tcp://" + s + ":52001/User");
+                _serviceHost.Open();
                 Console.WriteLine("The connection to the DB was done successfully!");
-                Console.ReadLine();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Failed to connect to the database! " + ex.ToString());
-                Console.ReadLine();
+                Console.WriteLine("Failed to connect to the database! " + ex);
             }
-            finally 
-            {
-                serviceHost.Close();
-            }
-
         }
 
+        public void Stop()
+        {
+            if (_serviceHost != null)
+            {
+                try
+                {
+                    _serviceHost.Close();
+                    Console.WriteLine("ServiceHost closed successfully.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Failed to close ServiceHost! " + ex);
+                }
+            }
+        }
     }
 }

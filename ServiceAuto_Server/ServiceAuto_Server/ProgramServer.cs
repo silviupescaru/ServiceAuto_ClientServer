@@ -11,8 +11,11 @@ namespace ServiceAuto_Server
     {
         static void Main(string[] args)
         {
-            new UserServiceHost();
-            new CarServiceHost();
+            CombinedServiceHost host = new CombinedServiceHost();
+            host.Start();
+            Console.WriteLine("Services are running. Press Enter to exit...");
+            Console.ReadLine();
+            host.Stop();
         }
     }
 }

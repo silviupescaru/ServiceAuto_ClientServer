@@ -61,6 +61,7 @@
     <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Service\CarService.cs" />
     <Compile Include="Service\CarServiceHost.cs" />
+    <Compile Include="Service\CombinedServiceHost.cs" />
     <Compile Include="Service\ICarService.cs" />
     <Compile Include="Service\IUserService.cs" />
     <Compile Include="Service\StatisticsService.cs" />

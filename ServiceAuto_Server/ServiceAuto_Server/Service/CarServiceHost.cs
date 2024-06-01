@@ -1,46 +1,63 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServiceAuto_Server.Service
 {
     public class CarServiceHost
     {
-        public CarServiceHost() 
+        private ServiceHost _serviceHost;
+
+        public CarServiceHost()
+        {
+            Console.WriteLine("CarServiceHost initialized.");
+        }
+
+        public void Start()
         {
             Console.WriteLine("Connecting to Service Auto DB ...");
-            NetTcpBinding tcp = new NetTcpBinding();
-            tcp.OpenTimeout = new TimeSpan(0, 60, 0);
-            tcp.SendTimeout = new TimeSpan(0, 60, 0);
-            tcp.ReceiveTimeout = new TimeSpan(0, 60, 0);
-            tcp.CloseTimeout = new TimeSpan(0, 60, 0);
-            tcp.MaxReceivedMessageSize = System.Int32.MaxValue;
-            tcp.ReaderQuotas.MaxArrayLength = System.Int32.MaxValue;
+            NetTcpBinding tcp = new NetTcpBinding
+            {
+                OpenTimeout = new TimeSpan(0, 60, 0),
+                SendTimeout = new TimeSpan(0, 60, 0),
+                ReceiveTimeout = new TimeSpan(0, 60, 0),
+                CloseTimeout = new TimeSpan(0, 60, 0),
+                MaxReceivedMessageSize = int.MaxValue
+            };
+            tcp.ReaderQuotas.MaxArrayLength = int.MaxValue;
+
             string s = ConfigurationManager.ConnectionStrings["IPAdress"].ConnectionString;
             tcp.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             tcp.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
+
             ICarService carService = new CarService();
-            ServiceHost serviceHost = new ServiceHost(carService);
+            _serviceHost = new ServiceHost(carService);
 
             try
             {
-                serviceHost.AddServiceEndpoint(typeof(IUserService), tcp, "net.tcp://" + s + ":52001/Car");
-                serviceHost.Open();
+                _serviceHost.AddServiceEndpoint(typeof(ICarService), tcp, "net.tcp://" + s + ":52001/Car");
+                _serviceHost.Open();
                 Console.WriteLine("The connection to the DB was done successfully!");
-                Console.ReadLine();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Failed to connect to database! " + ex.ToString());
-                Console.ReadLine();
+                Console.WriteLine("Failed to connect to database! " + ex);
             }
-            finally 
+        }
+
+        public void Stop()
+        {
+            if (_serviceHost != null)
             {
-                serviceHost.Close();
+                try
+                {
+                    _serviceHost.Close();
+                    Console.WriteLine("ServiceHost closed successfully.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Failed to close ServiceHost! " + ex);
+                }
             }
         }
     }
