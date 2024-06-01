@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ServiceAuto_Server.Repository
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
         private Repository repository;
 
@@ -56,21 +56,6 @@ namespace ServiceAuto_Server.Repository
 
                 DataRow row = userTable.Rows[0];
                 return row["role"].ToString();
-            }
-
-            return "";
-        }
-
-        public string GetLanguage(string username, string password)
-        {
-            string commandSQL = "SELECT * FROM [User] WHERE username = '";
-            commandSQL += username + "' AND password = '" + password + "'";
-            DataTable userTable = this.repository.GetTable(commandSQL);
-
-            if (userTable != null || userTable.Rows.Count != 0)
-            {
-                DataRow row = userTable.Rows[0];
-                return row["language"].ToString();
             }
 
             return "";

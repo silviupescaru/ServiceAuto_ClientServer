@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ServiceAuto_Server.Domain
 {
-    internal interface ICarRepository
+    public interface ICarRepository
     {
+        bool AddCar(Car car);
+        bool DeleteCar(uint id);
+        bool UpdateCar(Car car);
+
     }
 }
