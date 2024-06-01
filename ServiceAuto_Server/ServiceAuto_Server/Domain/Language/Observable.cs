@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ServiceAuto_Server.Domain.Language
 {
-    internal class Observable
+    public interface Observable
     {
+        void Update(Subject obs);
     }
 }

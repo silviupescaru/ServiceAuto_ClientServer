@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceAuto_Server.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace ServiceAuto_Server
     {
         static void Main(string[] args)
         {
+            new UserServiceHost();
+            new CarServiceHost();
         }
     }
 }

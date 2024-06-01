@@ -4,3 +4,14 @@ D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.Domain.Language.string.ru.resources
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.csproj.GenerateResource.cache
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.csproj.CoreCompileInputs.cache
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\ServiceAuto_Server.exe.config
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\ServiceAuto_Server.exe
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\ServiceAuto_Server.pdb
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\en\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\fr\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\bin\Debug\ru\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\en\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\fr\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ru\ServiceAuto_Server.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.exe
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Server\ServiceAuto_Server\obj\Debug\ServiceAuto_Server.pdb
