@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ServiceAuto_Server.Repository
 {
-    public class CarRepository
+    public class CarRepository : ICarRepository
     {
         private Repository repository;
 

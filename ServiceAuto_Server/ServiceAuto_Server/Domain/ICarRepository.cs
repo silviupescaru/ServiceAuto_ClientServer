@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace ServiceAuto_Server.Domain
 {
@@ -11,6 +12,14 @@ namespace ServiceAuto_Server.Domain
         bool AddCar(Car car);
         bool DeleteCar(uint id);
         bool UpdateCar(Car car);
-
+        DataTable CarTable();
+        List<Car> CarList();
+        List<Car> CarList_BrandFuel(string brand, string fuel);
+        List<Car> CarList_Owner(string owner);
+        List<Car> CarList_Brand(string brand);
+        List<Car> CarList_Color(string color);
+        List<Car> CarList_Fuel(string fuel);
+        Car SearchCarByID(string id);
+        List<Car> SearchCarByOwner(string owner);
     }
 }

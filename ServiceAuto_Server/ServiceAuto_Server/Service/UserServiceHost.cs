@@ -25,7 +25,7 @@ namespace ServiceAuto_Server.Service
 
             try
             {
-                serviceHost.AddServiceEndpoint(typeof(IUserService), tcp, "net.tcp://" + s + ":52001/Login");
+                serviceHost.AddServiceEndpoint(typeof(IUserService), tcp, "net.tcp://" + s + ":52001/User");
                 serviceHost.Open();
                 Console.WriteLine("The connection to the DB was done successfully!");
                 Console.ReadLine();
