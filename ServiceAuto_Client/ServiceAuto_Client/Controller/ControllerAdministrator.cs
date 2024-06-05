@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ServiceAuto_Client.Controller
 {
-    internal class ControllerAdministrator
+    public class ControllerAdministrator
     {
+        
     }
 }

@@ -24,6 +24,9 @@ namespace ServiceAuto_Server.Repository
             string commandSQL = "insert into Car values('";
             commandSQL += car.Owner + "','" + car.Brand;
             commandSQL += "','" + car.Color + "','" + car.Fuel;
+            commandSQL += "','" + car.Year + "','" + car.EngineNo;
+            commandSQL += "','" + car.PlateNo + "','" + car.Defect;
+            commandSQL += "','" + car.RepairCost + "','" + car.Repaired;
             commandSQL += "')";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -40,6 +43,12 @@ namespace ServiceAuto_Server.Repository
             commandSQL += car.Owner + "', [brand] = '" + car.Brand;
             commandSQL += "', [color] = '" + car.Color;
             commandSQL += "', [fuel] = '" + car.Fuel;
+            commandSQL += "', [year] = '" + car.Year;
+            commandSQL += "', [engineNo] = '" + car.EngineNo;
+            commandSQL += "', [plateNo] = '" + car.PlateNo;
+            commandSQL += "', [defect] = '" + car.Defect;
+            commandSQL += "', [repairCost] = '" + car.RepairCost;
+            commandSQL += "', [repaired] = '" + car.Repaired;
             commandSQL += "' where [carID] = '" + car.CarID + "'";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -67,11 +76,9 @@ namespace ServiceAuto_Server.Repository
             return list;
         }
 
-        public List<Car> CarList_BrandFuel(string brand, string fuel)
+        public List<Car> CarList_BrandFuel()
         {
-            string selectSQL = "Select * from [Car] where [fuel] ='";
-            selectSQL += fuel + "' AND [brand] ='";
-            selectSQL += brand + "' order by carID";
+            string selectSQL = "Select * from [Car] order by [brand], [fuel]";
 
             Debug.Print(selectSQL);
 
@@ -155,6 +162,28 @@ namespace ServiceAuto_Server.Repository
             return list;
         }
 
+        public List<Car> CarList_Year(int year)
+        {
+            string selectSQL = "Select * from [Car] where [year] ='";
+            selectSQL += year;
+            selectSQL += "' order by carID";
+
+            Debug.Print(selectSQL);
+
+            DataTable carTable = this.repository.GetTable(selectSQL);
+            if (carTable == null || carTable.Rows.Count == 0)
+            {
+                return null;
+            }
+            List<Car> list = new List<Car>();
+            foreach (DataRow dr in carTable.Rows)
+            {
+                Car car = this.convertToCar(dr);
+                list.Add(car);
+            }
+            return list;
+        }
+
         public List<Car> CarList_Fuel(string fuel)
         {
             string selectSQL = "Select * from [Car] where [fuel] ='";
@@ -209,10 +238,40 @@ namespace ServiceAuto_Server.Repository
             return list;
         }
 
+        public List<Car> SearchCarByPlate(string plate)
+        {
+            string selectSQL = "Select * from Car where plateNo = '" + plate + "'";
+            DataTable carTable = this.repository.GetTable(selectSQL);
+            if (carTable == null || carTable.Rows.Count == 0)
+                return null;
+            List<Car> list = new List<Car>();
+            foreach (DataRow dr in carTable.Rows)
+            {
+                Car car = this.convertToCar(dr);
+                list.Add(car);
+            }
+            return list;
+        }
+
+        public List<Car> SearchCarByEngineNo(string engineNo)
+        {
+            string selectSQL = "Select * from Car where engineNo = '" + engineNo + "'";
+            DataTable carTable = this.repository.GetTable(selectSQL);
+            if (carTable == null || carTable.Rows.Count == 0)
+                return null;
+            List<Car> list = new List<Car>();
+            foreach (DataRow dr in carTable.Rows)
+            {
+                Car car = this.convertToCar(dr);
+                list.Add(car);
+            }
+            return list;
+        }
+
         private Car convertToCar(DataRow dataRow)
         {
             int id = (int)dataRow["carID"];
-            return new Car((uint)id, (string)dataRow["owner"], (string)dataRow["brand"], (string)dataRow["color"], (string)dataRow["fuel"], (int)dataRow["year"], (string)dataRow["engineNo"], (string)dataRow["plateNo"], (bool)dataRow["repaired"]);
+            return new Car((uint)id, (string)dataRow["owner"], (string)dataRow["brand"], (string)dataRow["color"], (string)dataRow["fuel"], (int)dataRow["year"], (string)dataRow["engineNo"], (string)dataRow["plateNo"], (string)dataRow["defect"], (float)dataRow["repairCost"], (bool)dataRow["repaired"]);
         }
 
     }

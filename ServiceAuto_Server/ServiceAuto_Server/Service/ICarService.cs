@@ -28,7 +28,7 @@ namespace ServiceAuto_Server.Service
         List<Car> CarList();
 
         [OperationContract]
-        List<Car> CarList_BrandFuel(string brand, string fuel);
+        List<Car> CarList_BrandFuel();
 
         [OperationContract]
         List<Car> CarList_Owner(string owner);
@@ -47,6 +47,12 @@ namespace ServiceAuto_Server.Service
 
         [OperationContract]
         List<Car> SearchCarByOwner(string owner);
+
+        [OperationContract]
+        List<Car> SearchCarByPlate(string plate);
+
+        [OperationContract]
+        List<Car> SearchCarByEngineNo(string engineNo);
 
     }
 }

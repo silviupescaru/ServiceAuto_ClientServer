@@ -14,12 +14,14 @@ namespace ServiceAuto_Server.Domain
         bool UpdateCar(Car car);
         DataTable CarTable();
         List<Car> CarList();
-        List<Car> CarList_BrandFuel(string brand, string fuel);
+        List<Car> CarList_BrandFuel();
         List<Car> CarList_Owner(string owner);
         List<Car> CarList_Brand(string brand);
         List<Car> CarList_Color(string color);
         List<Car> CarList_Fuel(string fuel);
         Car SearchCarByID(string id);
         List<Car> SearchCarByOwner(string owner);
+        List<Car> SearchCarByPlate(string plate);
+        List<Car> SearchCarByEngineNo(string engineNo);
     }
 }

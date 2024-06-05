@@ -16,6 +16,8 @@ namespace ServiceAuto_Server.Domain
         protected int year;
         protected string engineNo;
         protected string plateNo;
+        protected string defect;
+        protected float repairCost;
         protected bool repaired;
 
         public Car()
@@ -28,10 +30,12 @@ namespace ServiceAuto_Server.Domain
             this.year = 2015;
             this.engineNo = "K9K";
             this.plateNo = "OT17PSM";
+            this.defect = "Sunroof";
+            this.repairCost = 150;
             this.repaired = false;
         }
 
-        public Car(uint carID, string owner, string brand, string color, string fuel, int year, string engineNo, string plateNo, bool repaired)
+        public Car(uint carID, string owner, string brand, string color, string fuel, int year, string engineNo, string plateNo, string defect, float repairCost, bool repaired)
         {
             this.carID = carID;
             this.owner = owner;
@@ -41,6 +45,8 @@ namespace ServiceAuto_Server.Domain
             this.year = year;
             this.engineNo = engineNo;
             this.plateNo = plateNo;
+            this.defect = defect;
+            this.repairCost = repairCost;
             this.repaired = repaired;
         }
 
@@ -55,6 +61,8 @@ namespace ServiceAuto_Server.Domain
             this.year = car.year;
             this.engineNo = car.engineNo;
             this.plateNo = car.plateNo;
+            this.defect = car.defect;
+            this.repairCost = car.repairCost;
             this.repaired= car.repaired;
         }
 
@@ -104,6 +112,18 @@ namespace ServiceAuto_Server.Domain
         {
             get { return this.plateNo; }
             set { this.plateNo = value; }
+        }
+
+        public string Defect
+        {
+            get { return this.defect; }
+            set { this.defect = value; }
+        }
+
+        public float RepairCost
+        {
+            get { return this.repairCost; }
+            set { this.repairCost = value; }
         }
 
         public bool Repaired

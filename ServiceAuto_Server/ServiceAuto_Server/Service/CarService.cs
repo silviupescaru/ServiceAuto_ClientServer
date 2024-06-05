@@ -45,9 +45,9 @@ namespace ServiceAuto_Server.Service
             return this.iCarRepository.CarList();
         }
 
-        public List<Car> CarList_BrandFuel(string brand, string fuel) 
+        public List<Car> CarList_BrandFuel() 
         {
-            return this.iCarRepository.CarList_BrandFuel(brand, fuel);
+            return this.iCarRepository.CarList_BrandFuel();
         }
 
         public List<Car> CarList_Owner(string owner)
@@ -78,6 +78,16 @@ namespace ServiceAuto_Server.Service
         public List<Car> SearchCarByOwner(string owner)
         {
             return this.iCarRepository.SearchCarByOwner(owner); 
+        }
+
+        public List<Car> SearchCarByPlate(string plate)
+        {
+            return this.iCarRepository.SearchCarByPlate(plate);
+        }
+
+        public List<Car> SearchCarByEngineNo(string engineNo)
+        {
+            return this.iCarRepository.SearchCarByEngineNo(engineNo);
         }
 
     }
