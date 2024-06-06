@@ -1,5 +1,5 @@
 ﻿using ServiceAuto_Client.Controller;
-using ServiceAuto_Server.Domain.Language;
+using ServiceAuto_Client.Language;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

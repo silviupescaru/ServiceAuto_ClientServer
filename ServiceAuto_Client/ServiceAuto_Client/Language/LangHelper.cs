@@ -7,7 +7,7 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServiceAuto_Server.Domain.Language
+namespace ServiceAuto_Client.Language
 {
     public class LangHelper : Subject
     {
@@ -16,7 +16,7 @@ namespace ServiceAuto_Server.Domain.Language
         public LangHelper()
         {
             this.obsList = new List<Observable>();
-            rm = new ResourceManager("ServiceAuto_Server.Domain.Language.string", Assembly.GetExecutingAssembly());
+            rm = new ResourceManager("ServiceAuto_Client.Language.string", Assembly.GetExecutingAssembly());
         }
 
         public string GetString(string name)

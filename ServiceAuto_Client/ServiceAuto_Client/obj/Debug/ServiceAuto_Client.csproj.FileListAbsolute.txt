@@ -25,9 +25,6 @@ D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\ServiceAuto_Server.exe
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\ServiceAuto_Server.pdb
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\ServiceAuto_Server.exe.config
-D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\en\ServiceAuto_Server.resources.dll
-D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\fr\ServiceAuto_Server.resources.dll
-D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\ru\ServiceAuto_Server.resources.dll
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.csproj.AssemblyReference.cache
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.Properties.Resources.resources
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.View.AdministratorGUI.resources
@@ -40,3 +37,12 @@ D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceA.929810EE.Up2Date
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.exe
 D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.pdb
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.Language.string.en.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.Language.string.fr.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ServiceAuto_Client.Language.string.ru.resources
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\en\ServiceAuto_Client.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\fr\ServiceAuto_Client.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\bin\Debug\ru\ServiceAuto_Client.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\en\ServiceAuto_Client.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\fr\ServiceAuto_Client.resources.dll
+D:\Facultate\ServiceAuto_ClientServer\ServiceAuto_Client\ServiceAuto_Client\obj\Debug\ru\ServiceAuto_Client.resources.dll

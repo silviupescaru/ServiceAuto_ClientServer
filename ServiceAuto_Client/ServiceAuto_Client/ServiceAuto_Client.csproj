@@ -69,10 +69,15 @@
     <Compile Include="Controller\ControllerLogin.cs" />
     <Compile Include="Controller\ControllerManager.cs" />
     <Compile Include="Controller\ControllerStatistics.cs" />
+    <Compile Include="Language\LangHelper.cs" />
+    <Compile Include="Language\Observable.cs" />
+    <Compile Include="Language\string.en.Designer.cs" />
+    <Compile Include="Language\Subject.cs" />
     <Compile Include="ProgramClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ExcelSaveService.cs" />
     <Compile Include="Service\FileSaveService.cs" />
+    <Compile Include="Service\FileSaveServiceFactory.cs" />
     <Compile Include="Service\WordSaveService.cs" />
     <Compile Include="View\AdministratorGUI.cs">
       <SubType>Form</SubType>
@@ -104,6 +109,9 @@
     <Compile Include="View\StatisticsGUI.Designer.cs">
       <DependentUpon>StatisticsGUI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Language\string.en.resx" />
+    <EmbeddedResource Include="Language\string.fr.resx" />
+    <EmbeddedResource Include="Language\string.ru.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

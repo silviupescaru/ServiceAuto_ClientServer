@@ -49,10 +49,6 @@
     <Compile Include="Domain\Car.cs" />
     <Compile Include="Domain\ICarRepository.cs" />
     <Compile Include="Domain\IUserRepository.cs" />
-    <Compile Include="Domain\Language\LangHelper.cs" />
-    <Compile Include="Domain\Language\Observable.cs" />
-    <Compile Include="Domain\Language\string.en.Designer.cs" />
-    <Compile Include="Domain\Language\Subject.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="ProgramServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,11 +66,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Domain\Language\string.en.resx" />
-    <EmbeddedResource Include="Domain\Language\string.fr.resx" />
-    <EmbeddedResource Include="Domain\Language\string.ru.resx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

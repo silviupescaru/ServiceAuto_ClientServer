@@ -10,7 +10,7 @@ using ServiceAuto_Client.View;
 using System.ServiceModel;
 using System.Configuration;
 using System.Windows.Forms;
-using ServiceAuto_Server.Domain.Language;
+using ServiceAuto_Client.Language;
 
 namespace ServiceAuto_Client.Controller
 {
@@ -111,8 +111,8 @@ namespace ServiceAuto_Client.Controller
                         {
                             MessageBox.Show("Admin success");
                         }
-                        else MessageBox.Show("Wrong username or password");
                     }
+                    else MessageBox.Show("Wrong username or password");
                 }
             }
             catch(Exception ex)
