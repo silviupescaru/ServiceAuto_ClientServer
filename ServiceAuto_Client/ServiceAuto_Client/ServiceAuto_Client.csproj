@@ -50,6 +50,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -107,7 +108,23 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\AdministratorGUI.resx">
+      <DependentUpon>AdministratorGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\EmployeeGUI.resx">
+      <DependentUpon>EmployeeGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LoginGUI.resx">
+      <DependentUpon>LoginGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ManagerGUI.resx">
+      <DependentUpon>ManagerGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StatisticsGUI.resx">
+      <DependentUpon>StatisticsGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -122,6 +139,45 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="resources\adminBG.jpg" />
+    <Content Include="resources\adminBG1.jpg" />
+    <Content Include="resources\cars\Audi_Blue.jpg" />
+    <Content Include="resources\cars\Audi_Gray.jpg" />
+    <Content Include="resources\cars\Audi_Green.jpg" />
+    <Content Include="resources\cars\Audi_Orange.jpg" />
+    <Content Include="resources\cars\Audi_Purple.jpg" />
+    <Content Include="resources\cars\Audi_Red.jpg" />
+    <Content Include="resources\cars\Audi_Yellow.jpg" />
+    <Content Include="resources\cars\Lexus_Black.jpg" />
+    <Content Include="resources\cars\Mazda_Deep Purple.jpg" />
+    <Content Include="resources\cars\Mazda_Green.jpg" />
+    <Content Include="resources\cars\Mercedes-Benz_Gray.jpg" />
+    <Content Include="resources\cars\Mercedes-Benz_White.jpg" />
+    <Content Include="resources\cars\Nissan_Gray.jpg" />
+    <Content Include="resources\cars\noCarFound.jpg" />
+    <Content Include="resources\cars\Seat_White.jpg" />
+    <Content Include="resources\cars\Skoda_Green.jpg" />
+    <Content Include="resources\cars\Skoda_Navy Blue.jpg" />
+    <Content Include="resources\cars\Skoda_Purple.jpg" />
+    <Content Include="resources\cars\Skoda_Racing Blue.jpg" />
+    <Content Include="resources\cars\Skoda_Red.jpg" />
+    <Content Include="resources\cars\Volvo_Blue.jpg" />
+    <Content Include="resources\cars\Volvo_Gray.jpg" />
+    <Content Include="resources\cars\Volvo_Green.jpg" />
+    <Content Include="resources\cars\Volvo_Orange.jpg" />
+    <Content Include="resources\cars\Volvo_Purple.jpg" />
+    <Content Include="resources\cars\Volvo_Red.jpg" />
+    <Content Include="resources\cars\Volvo_Yellow.jpg" />
+    <Content Include="resources\employeeBG.jpg" />
+    <Content Include="resources\employeeBG1.jpg" />
+    <Content Include="resources\loginBG.jpg" />
+    <Content Include="resources\loginNebun.jpg" />
+    <Content Include="resources\loginNebun1.jpg" />
+    <Content Include="resources\managerBG.jpg" />
+    <Content Include="resources\managerBG1.jpg" />
+    <Content Include="resources\sa.ico" />
+    <Content Include="resources\statisticsBG.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
