@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\statisticsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\statisticsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\statisticsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\statisticsgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\controller\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\controller\\controllerlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\managergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\managergui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\logingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\logingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\programclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\logingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\logingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\employeegui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\employeegui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\administratorgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\administratorgui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|e:\\facultate\\iii\\ps\\serviceauto_clientserver\\serviceauto_client\\serviceauto_client\\view\\ilogingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695A0AAA-20ED-4A49-B101-E5A61B19323A}|ServiceAuto_Client\\ServiceAuto_Client.csproj|solutionrelative:serviceauto_client\\view\\ilogingui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,79 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StatisticsGUI.cs",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "RelativeToolTip": "ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T06:00:41.301Z",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\App.config",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\App.config",
+              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\App.config",
+              "RelativeToolTip": "ServiceAuto_Client\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-06T06:31:08.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StatisticsGUI.cs [Design]",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\StatisticsGUI.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\StatisticsGUI.cs [Design]",
-              "RelativeToolTip": "ServiceAuto_Client\\View\\StatisticsGUI.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "ILoginGUI.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\ILoginGUI.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\ILoginGUI.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\ILoginGUI.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\View\\ILoginGUI.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T05:59:43.025Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-06T06:12:27.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ManagerGUI.cs [Design]",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\ManagerGUI.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\ManagerGUI.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\ManagerGUI.cs [Design]",
-              "RelativeToolTip": "ServiceAuto_Client\\View\\ManagerGUI.cs [Design]",
+              "Title": "LoginGUI.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\LoginGUI.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\LoginGUI.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\LoginGUI.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\View\\LoginGUI.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAWwA8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T05:58:18.508Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-06T06:06:18.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControllerLogin.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerLogin.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\Controller\\ControllerLogin.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\Controller\\ControllerLogin.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\Controller\\ControllerLogin.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAACcAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:05:26.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ProgramClient.cs",
+              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\ProgramClient.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Client\\ProgramClient.cs",
+              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\ProgramClient.cs",
+              "RelativeToolTip": "ServiceAuto_Client\\ProgramClient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:05:50.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginGUI.cs [Design]",
               "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\LoginGUI.cs",
               "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\LoginGUI.cs",
               "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\LoginGUI.cs [Design]",
               "RelativeToolTip": "ServiceAuto_Client\\View\\LoginGUI.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T05:57:08.73Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "EmployeeGUI.cs [Design]",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\EmployeeGUI.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\EmployeeGUI.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\EmployeeGUI.cs [Design]",
-              "RelativeToolTip": "ServiceAuto_Client\\View\\EmployeeGUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T05:55:12.724Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AdministratorGUI.cs [Design]",
-              "DocumentMoniker": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\AdministratorGUI.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Client\\View\\AdministratorGUI.cs",
-              "ToolTip": "E:\\Facultate\\III\\PS\\ServiceAuto_ClientServer\\ServiceAuto_Client\\ServiceAuto_Client\\View\\AdministratorGUI.cs [Design]",
-              "RelativeToolTip": "ServiceAuto_Client\\View\\AdministratorGUI.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T05:53:12.643Z",
+              "WhenOpened": "2024-06-06T06:25:56.767Z",
               "EditorCaption": " [Design]"
             }
           ]
