@@ -86,11 +86,6 @@
     <Compile Include="View\EmployeeGUI.Designer.cs">
       <DependentUpon>EmployeeGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\IAdministratorGUI.cs" />
-    <Compile Include="View\IEmployeeGUI.cs" />
-    <Compile Include="View\ILoginGUI.cs" />
-    <Compile Include="View\IManagerGUI.cs" />
-    <Compile Include="View\IStatisticsGUI.cs" />
     <Compile Include="View\LoginGUI.cs">
       <SubType>Form</SubType>
     </Compile>

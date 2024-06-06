@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ServiceAuto_Client.Controller;
 using ServiceAuto_Client.View;
 
 namespace ServiceAuto_Client
@@ -17,8 +18,9 @@ namespace ServiceAuto_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginGUI());
 
+            ControllerLogin login = new ControllerLogin(0);
+            Application.Run(login.GetView());
         }
     }
 }

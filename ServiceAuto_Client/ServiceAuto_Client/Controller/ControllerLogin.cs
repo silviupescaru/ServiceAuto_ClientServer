@@ -10,18 +10,23 @@ using ServiceAuto_Client.View;
 using System.ServiceModel;
 using System.Configuration;
 using System.Windows.Forms;
+using ServiceAuto_Server.Domain.Language;
 
 namespace ServiceAuto_Client.Controller
 {
     public class ControllerLogin
     {
-        private ILoginGUI iLoginGUI;
+        private LoginGUI loginGUI;
         private IUserService iUserService;
+        private LangHelper lang;
 
-        public ControllerLogin(ILoginGUI iLoginGUI)
+        public ControllerLogin(int index)
         {
-            this.iLoginGUI = iLoginGUI;
+            this.loginGUI = new LoginGUI(index);
+            this.lang = new LangHelper();
+
             this.createBinding();
+            this.eventsManagement();
         }
 
         private void createBinding()
@@ -48,12 +53,45 @@ namespace ServiceAuto_Client.Controller
             }
         }
 
-        public void Login()
+        public LoginGUI GetView()
+        {
+            return this.loginGUI;
+        }
+
+        private void eventsManagement()
+        {
+            this.loginGUI.FormClosed += new FormClosedEventHandler(exitApplication);
+            this.loginGUI.GetLoginButton().Click += new EventHandler(login);
+            this.loginGUI.GetChangeLangugae().SelectedIndexChanged += new EventHandler(changeLanguage);
+        }
+
+        private void exitApplication(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void changeLanguage(object sender, EventArgs e)
+        {
+            if (this.loginGUI.GetChangeLangugae().SelectedIndex == 0)
+            {
+                this.lang.ChangeLanguage("en");
+            }
+            else if (this.loginGUI.GetChangeLangugae().SelectedIndex == 1)
+            {
+                this.lang.ChangeLanguage("fr");
+            }
+            else if (this.loginGUI.GetChangeLangugae().SelectedIndex == 2)
+            {
+                this.lang.ChangeLanguage("ru");
+            }
+        }
+
+        private void login(object sender, EventArgs e)
         {
             try
             {
-                string username = this.iLoginGUI.Username;
-                string password = this.iLoginGUI.Password;
+                string username = this.loginGUI.GetUsername().Text;
+                string password = this.loginGUI.GetPassword().Text;
 
                 if(username.Length > 0 && password.Length > 0)
                 {
@@ -73,6 +111,7 @@ namespace ServiceAuto_Client.Controller
                         {
                             MessageBox.Show("Admin success");
                         }
+                        else MessageBox.Show("Wrong username or password");
                     }
                 }
             }

@@ -1,4 +1,5 @@
 ﻿using ServiceAuto_Client.Controller;
+using ServiceAuto_Server.Domain.Language;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,31 +12,44 @@ using System.Windows.Forms;
 
 namespace ServiceAuto_Client.View
 {
-    public partial class LoginGUI : Form, ILoginGUI
+    public partial class LoginGUI : Form, Observable
     {
-        private ControllerLogin loginController;
 
-        public LoginGUI()
+        public LoginGUI(int index)
         {
             InitializeComponent();
-            this.loginController = new ControllerLogin(this);
+            this.textBoxUsername.Text = string.Empty;
+            this.textBoxPassword.Text = string.Empty;
+            this.comboBoxChangeLanguage.SelectedIndex = index;
         }
 
-        private void buttonLogin_Click(object sender, EventArgs e)
+        public TextBox GetUsername()
         {
-            this.loginController.Login();
+            return this.textBoxUsername;
         }
 
-        public string Username
+        public TextBox GetPassword()
         {
-            get { return this.textBoxUsername.Text; }
-            set { this.textBoxUsername.Text = value; }
+            return this.textBoxPassword;
         }
 
-        public string Password
+        public ComboBox GetChangeLangugae()
         {
-            get { return this.textBoxPassword.Text; }
-            set { this.textBoxPassword.Text = value; }
+            return this.comboBoxChangeLanguage;
+        }
+
+        public Button GetLoginButton()
+        {
+            return this.buttonLogin;
+        }
+
+        public void Update(Subject subj)
+        {
+            LangHelper lang = (LangHelper)subj;
+
+            this.buttonLogin.Text = lang.GetString("buttonLogin");
+            this.labelUsername.Text = lang.GetString("labelUsername");
+            this.labelPassword.Text = lang.GetString("labelPassword");
         }
     }
 }
