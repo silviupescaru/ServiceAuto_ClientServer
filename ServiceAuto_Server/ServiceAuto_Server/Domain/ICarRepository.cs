@@ -21,6 +21,7 @@ namespace ServiceAuto_Server.Domain
         List<Car> CarList_Brand(string brand);
         List<Car> CarList_Color(string color);
         List<Car> CarList_Fuel(string fuel);
+        List<Car> CarList_Year(int year);
         Car SearchCarByID(string id);
         List<Car> SearchCarByOwner(string owner);
         List<Car> SearchCarByPlate(string plate);

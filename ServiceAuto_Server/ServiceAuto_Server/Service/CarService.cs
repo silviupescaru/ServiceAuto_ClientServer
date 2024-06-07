@@ -80,6 +80,11 @@ namespace ServiceAuto_Server.Service
             return this.iCarRepository.CarList_Fuel(fuel);
         }
 
+        public List<Car> CarList_Year(int year)
+        {
+            return this.iCarRepository.CarList_Year(year);
+        }
+
         public Car SearchCarByID(string id)
         {
             return this.iCarRepository.SearchCarByID(id);

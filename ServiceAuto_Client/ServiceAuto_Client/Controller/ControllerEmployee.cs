@@ -187,53 +187,60 @@ namespace ServiceAuto_Client.Controller
             try
             {
                 if (this.employeeGUI.GetCarTable() != null)
-                    this.employeeGUI.GetCarTable().DataSource = this.iCarService.CarTable();
+                    this.employeeGUI.GetCarTable().Rows.Clear();
 
                 if (this.employeeGUI.GetSearch().Text.Length > 0)
                 {
-                    List<Car> list = this.iCarService.SearchCarByEngineNo(this.employeeGUI.GetSearch().Text);
-                    if (list == null)
+                    List<Car> listEngineNo = this.iCarService.SearchCarByEngineNo(this.employeeGUI.GetSearch().Text);
+                    List<Car> listPlateNo = this.iCarService.SearchCarByPlate(this.employeeGUI.GetSearch().Text);
+                    if (listEngineNo == null)
                     {
-                        list = this.iCarService.SearchCarByPlate(this.employeeGUI.GetSearch().Text);
-                        if (list == null)
-                            MessageBox.Show(this.lang.GetString("messageBoxNoCarDesiredOwner"));
+                        if (listPlateNo == null)
+                            MessageBox.Show(this.lang.GetString("messageBoxNoCarDesiredEngineNo"));
+                        else
+                        {
+                            foreach (Car car in listPlateNo)
+                            {
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
+                            }
+                        }
                     }
                     else
                     {
-                        System.Data.DataTable dt = new System.Data.DataTable();
-
-                        dt.Columns.Add("carID", typeof(uint));
-                        dt.Columns.Add("owner", typeof(string));
-                        dt.Columns.Add("brand", typeof(string));
-                        dt.Columns.Add("color", typeof(string));
-                        dt.Columns.Add("fuel", typeof(string));
-                        dt.Columns.Add("year", typeof(int));
-                        dt.Columns.Add("engineNo", typeof(string));
-                        dt.Columns.Add("plateNo", typeof(string));
-                        dt.Columns.Add("defect", typeof(string));
-                        dt.Columns.Add("repairCost", typeof(float));
-                        dt.Columns.Add("repaired", typeof(bool));
-
-                        foreach (Car car in list)
+                        foreach (Car car in listEngineNo)
                         {
-                            DataRow row = dt.NewRow();
-
-                            row["carID"] = car.CarID;
-                            row["owner"] = car.Owner;
-                            row["brand"] = car.Brand;
-                            row["color"] = car.Color;
-                            row["fuel"] = car.Fuel;
-                            row["year"] = car.Year;
-                            row["engineNo"] = car.EngineNo;
-                            row["plateNo"] = car.PlateNo;
-                            row["defect"] = car.Defect;
-                            row["repairCost"] = car.RepairCost;
-                            row["repaired"] = car.Repaired;
-
-                            dt.Rows.Add(row);
+                            if (car != null)
+                            {
+                                DataGridViewRow row = new DataGridViewRow();
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                this.employeeGUI.GetCarTable().Rows.Add(row);
+                            }
                         }
-
-                        this.employeeGUI.GetCarTable().DataSource = dt;
                     }
                 }
                 else MessageBox.Show(this.lang.GetString("messageBoxSearchEmpty"));
@@ -257,203 +264,137 @@ namespace ServiceAuto_Client.Controller
                 {
                     if (selectedOption.ToUpper() == "OWNER")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
+                        this.employeeGUI.GetCarTable().Rows.Clear();
                         List<Car> list = this.iCarService.CarList_Owner(this.employeeGUI.GetOwner().Text);
                         if (list != null)
                         {
-                            System.Data.DataTable dt = new System.Data.DataTable();
-                            dt.Columns.Add("carID", typeof(uint));
-                            dt.Columns.Add("owner", typeof(string));
-                            dt.Columns.Add("brand", typeof(string));
-                            dt.Columns.Add("color", typeof(string));
-                            dt.Columns.Add("fuel", typeof(string));
-                            dt.Columns.Add("year", typeof(int));
-                            dt.Columns.Add("engineNo", typeof(string));
-                            dt.Columns.Add("plateNo", typeof(string));
-                            dt.Columns.Add("defect", typeof(string));
-                            dt.Columns.Add("repairCost", typeof(float));
-                            dt.Columns.Add("repaired", typeof(bool));
-
                             foreach (Car car in list)
                             {
-                                DataRow row = dt.NewRow();
-
-                                row["carID"] = car.CarID;
-                                row["owner"] = car.Owner;
-                                row["brand"] = car.Brand;
-                                row["color"] = car.Color;
-                                row["fuel"] = car.Fuel;
-                                row["year"] = car.Year;
-                                row["engineNo"] = car.EngineNo;
-                                row["plateNo"] = car.PlateNo;
-                                row["defect"] = car.Defect;
-                                row["repairCost"] = car.RepairCost;
-                                row["repaired"] = car.Repaired;
-
-                                dt.Rows.Add(row);
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
                             }
-
-                            this.employeeGUI.GetCarTable().DataSource = dt;
                         }
                     }
                     else if (selectedOption.ToUpper() == "BRAND")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
+                        this.employeeGUI.GetCarTable().Rows.Clear();
                         List<Car> list = this.iCarService.CarList_Brand(this.employeeGUI.GetBrand().Text);
                         if (list != null)
                         {
-                            System.Data.DataTable dt = new System.Data.DataTable();
-                            dt.Columns.Add("carID", typeof(uint));
-                            dt.Columns.Add("owner", typeof(string));
-                            dt.Columns.Add("brand", typeof(string));
-                            dt.Columns.Add("color", typeof(string));
-                            dt.Columns.Add("fuel", typeof(string));
-                            dt.Columns.Add("year", typeof(int));
-                            dt.Columns.Add("engineNo", typeof(string));
-                            dt.Columns.Add("plateNo", typeof(string));
-                            dt.Columns.Add("defect", typeof(string));
-                            dt.Columns.Add("repairCost", typeof(float));
-                            dt.Columns.Add("repaired", typeof(bool));
-
                             foreach (Car car in list)
                             {
-                                DataRow row = dt.NewRow();
-
-                                row["carID"] = car.CarID;
-                                row["owner"] = car.Owner;
-                                row["brand"] = car.Brand;
-                                row["color"] = car.Color;
-                                row["fuel"] = car.Fuel;
-                                row["year"] = car.Year;
-                                row["engineNo"] = car.EngineNo;
-                                row["plateNo"] = car.PlateNo;
-                                row["defect"] = car.Defect;
-                                row["repairCost"] = car.RepairCost;
-                                row["repaired"] = car.Repaired;
-
-                                dt.Rows.Add(row);
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
                             }
-                            this.employeeGUI.GetCarTable().DataSource = dt;
                         }
                     }
                     else if (selectedOption.ToUpper() == "COLOR")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
+                        this.employeeGUI.GetCarTable().Rows.Clear();
                         List<Car> list = this.iCarService.CarList_Color(this.employeeGUI.GetColor().Text);
                         if (list != null)
                         {
-                            System.Data.DataTable dt = new System.Data.DataTable();
-                            dt.Columns.Add("carID", typeof(uint));
-                            dt.Columns.Add("owner", typeof(string));
-                            dt.Columns.Add("brand", typeof(string));
-                            dt.Columns.Add("color", typeof(string));
-                            dt.Columns.Add("fuel", typeof(string));
-                            dt.Columns.Add("year", typeof(int));
-                            dt.Columns.Add("engineNo", typeof(string));
-                            dt.Columns.Add("plateNo", typeof(string));
-                            dt.Columns.Add("defect", typeof(string));
-                            dt.Columns.Add("repairCost", typeof(float));
-                            dt.Columns.Add("repaired", typeof(bool));
-
                             foreach (Car car in list)
                             {
-                                DataRow row = dt.NewRow();
-
-                                row["carID"] = car.CarID;
-                                row["owner"] = car.Owner;
-                                row["brand"] = car.Brand;
-                                row["color"] = car.Color;
-                                row["fuel"] = car.Fuel;
-                                row["year"] = car.Year;
-                                row["engineNo"] = car.EngineNo;
-                                row["plateNo"] = car.PlateNo;
-                                row["defect"] = car.Defect;
-                                row["repairCost"] = car.RepairCost;
-                                row["repaired"] = car.Repaired;
-
-                                dt.Rows.Add(row);
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
                             }
-                            this.employeeGUI.GetCarTable().DataSource = dt;
                         }
                     }
                     else if (selectedOption.ToUpper() == "FUEL")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
+                        this.employeeGUI.GetCarTable().Rows.Clear();
                         List<Car> list = this.iCarService.CarList_Fuel(this.employeeGUI.GetFuel().Text);
                         if (list != null)
                         {
-                            System.Data.DataTable dt = new System.Data.DataTable();
-                            dt.Columns.Add("carID", typeof(uint));
-                            dt.Columns.Add("owner", typeof(string));
-                            dt.Columns.Add("brand", typeof(string));
-                            dt.Columns.Add("color", typeof(string));
-                            dt.Columns.Add("fuel", typeof(string));
-                            dt.Columns.Add("year", typeof(int));
-                            dt.Columns.Add("engineNo", typeof(string));
-                            dt.Columns.Add("plateNo", typeof(string));
-                            dt.Columns.Add("defect", typeof(string));
-                            dt.Columns.Add("repairCost", typeof(float));
-                            dt.Columns.Add("repaired", typeof(bool));
-
                             foreach (Car car in list)
                             {
-                                DataRow row = dt.NewRow();
-
-                                row["carID"] = car.CarID;
-                                row["owner"] = car.Owner;
-                                row["brand"] = car.Brand;
-                                row["color"] = car.Color;
-                                row["fuel"] = car.Fuel;
-                                row["year"] = car.Year;
-                                row["engineNo"] = car.EngineNo;
-                                row["plateNo"] = car.PlateNo;
-                                row["defect"] = car.Defect;
-                                row["repairCost"] = car.RepairCost;
-                                row["repaired"] = car.Repaired;
-
-                                dt.Rows.Add(row);
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
                             }
-                            this.employeeGUI.GetCarTable().DataSource = dt;
                         }
                     }
                     else if (selectedOption.ToUpper() == "YEAR")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
-                        List<Car> list = this.iCarService.CarList_Fuel(this.employeeGUI.GetYear().Text);
+                        this.employeeGUI.GetCarTable().Rows.Clear();
+                        List<Car> list = this.iCarService.CarList_Year(Convert.ToInt32(this.employeeGUI.GetYear().Text));
                         if (list != null)
                         {
-                            System.Data.DataTable dt = new System.Data.DataTable();
-                            dt.Columns.Add("carID", typeof(uint));
-                            dt.Columns.Add("owner", typeof(string));
-                            dt.Columns.Add("brand", typeof(string));
-                            dt.Columns.Add("color", typeof(string));
-                            dt.Columns.Add("fuel", typeof(string));
-                            dt.Columns.Add("year", typeof(int));
-                            dt.Columns.Add("engineNo", typeof(string));
-                            dt.Columns.Add("plateNo", typeof(string));
-                            dt.Columns.Add("defect", typeof(string));
-                            dt.Columns.Add("repairCost", typeof(float));
-                            dt.Columns.Add("repaired", typeof(bool));
-
                             foreach (Car car in list)
                             {
-                                DataRow row = dt.NewRow();
-
-                                row["carID"] = car.CarID;
-                                row["owner"] = car.Owner;
-                                row["brand"] = car.Brand;
-                                row["color"] = car.Color;
-                                row["fuel"] = car.Fuel;
-                                row["year"] = car.Year;
-                                row["engineNo"] = car.EngineNo;
-                                row["plateNo"] = car.PlateNo;
-                                row["defect"] = car.Defect;
-                                row["repairCost"] = car.RepairCost;
-                                row["repaired"] = car.Repaired;
-
-                                dt.Rows.Add(row);
+                                if (car != null)
+                                {
+                                    DataGridViewRow row = new DataGridViewRow();
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                    row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                    this.employeeGUI.GetCarTable().Rows.Add(row);
+                                }
                             }
-                            this.employeeGUI.GetCarTable().DataSource = dt;
                         }
                     }
                     else MessageBox.Show(this.lang.GetString("messageBoxNoDataDesiredFilter"));
@@ -471,18 +412,57 @@ namespace ServiceAuto_Client.Controller
             try
             {
                 if (this.employeeGUI.GetCarTable() != null)
-                    this.employeeGUI.GetCarTable().DataSource = this.iCarService.EmptyTable();
+                    this.employeeGUI.GetCarTable().Rows.Clear();
 
                 string selectedOption = this.employeeGUI.GetCarOrderBy().Text;
                 if (selectedOption.Length > 0)
                 {
                     if (selectedOption.ToUpper() == "NONE")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.CarTable();
+                        List<Car> list = this.iCarService.CarList();
+                        foreach (Car car in list)
+                        {
+                            if (car != null)
+                            {
+                                DataGridViewRow row = new DataGridViewRow();
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                this.employeeGUI.GetCarTable().Rows.Add(row);
+                            }
+                        }
                     }
                     else if (selectedOption.ToUpper() == "BRAND AND FUEL")
                     {
-                        this.employeeGUI.GetCarTable().DataSource = this.iCarService.CarTableBrandFuel();
+                        this.employeeGUI.GetCarTable().Rows.Clear();
+                        List<Car> list = this.iCarService.CarList_BrandFuel();
+                        foreach (Car car in list)
+                        {
+                            if (car != null)
+                            {
+                                DataGridViewRow row = new DataGridViewRow();
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.CarID });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Owner });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Brand });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Color });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Fuel });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Year });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.EngineNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.PlateNo });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Defect });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.RepairCost });
+                                row.Cells.Add(new DataGridViewTextBoxCell { Value = car.Repaired });
+                                this.employeeGUI.GetCarTable().Rows.Add(row);
+                            }
+                        }
                     }
                 }
 

@@ -49,6 +49,9 @@ namespace ServiceAuto_Server.Service
         List<Car> CarList_Fuel(string fuel);
 
         [OperationContract]
+        List<Car> CarList_Year(int year);
+
+        [OperationContract]
         Car SearchCarByID(string id);
 
         [OperationContract]
