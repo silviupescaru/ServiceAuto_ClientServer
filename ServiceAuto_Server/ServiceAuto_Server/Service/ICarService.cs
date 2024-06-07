@@ -63,5 +63,8 @@ namespace ServiceAuto_Server.Service
         [OperationContract]
         List<Car> SearchCarByEngineNo(string engineNo);
 
+        [OperationContract]
+        Dictionary<string, uint> CarStatistics(string criterion);
+
     }
 }

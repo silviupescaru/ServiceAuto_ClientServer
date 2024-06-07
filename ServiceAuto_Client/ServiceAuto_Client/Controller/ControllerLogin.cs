@@ -107,7 +107,9 @@ namespace ServiceAuto_Client.Controller
                         }
                         else if (role.Equals("Manager"))
                         {
-                            MessageBox.Show("Manager success");
+                            this.loginGUI.Hide();
+                            ControllerManager mn = new ControllerManager(this.loginGUI.GetChangeLangugae().SelectedIndex);
+                            mn.GetView();
                         }
                         else if (role.Equals("Administrator"))
                         {

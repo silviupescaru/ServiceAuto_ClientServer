@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\domain\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\domain\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\service\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\service\\statisticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\service\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\domain\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\service\\carservicehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\service\\carservicehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\domain\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\domain\\icarrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|d:\\facultate\\serviceauto_clientserver\\serviceauto_server\\serviceauto_server\\service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\service\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\repository\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\serviceauto_server\\service\\userservicehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A36F8F2B-FE29-43B6-89E0-2EE732DA70CD}|ServiceAuto_Server\\ServiceAuto_Server.csproj|solutionrelative:serviceauto_server\\service\\userservicehost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,65 +27,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Domain\\IUserRepository.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\IUserRepository.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Domain\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Title": "StatisticsService.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\StatisticsService.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\StatisticsService.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\StatisticsService.cs",
+              "RelativeToolTip": "ServiceAuto_Server\\Service\\StatisticsService.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T06:45:31.241Z",
+              "WhenOpened": "2024-06-07T10:34:28.45Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\User.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Domain\\User.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\User.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Domain\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T06:40:38.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CarServiceHost.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarServiceHost.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\CarServiceHost.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarServiceHost.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Service\\CarServiceHost.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAsAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T05:01:43.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CarRepository.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Repository\\CarRepository.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Repository\\CarRepository.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Repository\\CarRepository.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Repository\\CarRepository.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAQwLYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T20:54:32.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CarService.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarService.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\CarService.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarService.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Service\\CarService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAFQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T20:53:37.603Z"
             },
             {
               "$type": "Document",
@@ -119,46 +45,23 @@
               "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\ICarService.cs",
               "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\ICarService.cs",
               "RelativeToolTip": "ServiceAuto_Server\\Service\\ICarService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADMAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T20:52:50.139Z",
+              "WhenOpened": "2024-06-07T10:34:27.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Repository\\Repository.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Repository\\Repository.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Repository\\Repository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAcAAAA",
+              "DocumentIndex": 2,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarService.cs",
+              "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\CarService.cs",
+              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\CarService.cs",
+              "RelativeToolTip": "ServiceAuto_Server\\Service\\CarService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T17:39:43.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICarRepository.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\ICarRepository.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Domain\\ICarRepository.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Domain\\ICarRepository.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Domain\\ICarRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T20:54:01.475Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserServiceHost.cs",
-              "DocumentMoniker": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\UserServiceHost.cs",
-              "RelativeDocumentMoniker": "ServiceAuto_Server\\Service\\UserServiceHost.cs",
-              "ToolTip": "D:\\Facultate\\ServiceAuto_ClientServer\\ServiceAuto_Server\\ServiceAuto_Server\\Service\\UserServiceHost.cs",
-              "RelativeToolTip": "ServiceAuto_Server\\Service\\UserServiceHost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T17:16:37.976Z"
+              "WhenOpened": "2024-06-07T10:34:26.219Z",
+              "EditorCaption": ""
             }
           ]
         }

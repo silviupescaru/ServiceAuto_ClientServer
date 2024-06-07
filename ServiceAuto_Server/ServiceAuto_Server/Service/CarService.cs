@@ -105,5 +105,11 @@ namespace ServiceAuto_Server.Service
             return this.iCarRepository.SearchCarByEngineNo(engineNo);
         }
 
+        public Dictionary<string, uint> CarStatistics(string criterion)
+        {
+            StatisticsService statisticsService = new StatisticsService(criterion);
+            return statisticsService.StatisticsResult;
+        }
+
     }
 }
