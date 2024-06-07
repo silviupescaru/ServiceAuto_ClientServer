@@ -522,7 +522,7 @@ namespace ServiceAuto_Client.Controller
                 FileSaveService fileSaveService = FileSaveServiceFactory.CreateFileSaveService(fileType);
 
                 MemoryStream chartImage = new MemoryStream();
-                List<Car> carList = new List<Car>();
+                List<Car> carList = this.iCarService.CarList();
                 string figureTitle = "Car List Figure";
 
                 fileSaveService.CreateFile(chartImage, carList, figureTitle);
@@ -541,7 +541,7 @@ namespace ServiceAuto_Client.Controller
                 FileSaveService fileSaveService = FileSaveServiceFactory.CreateFileSaveService(fileType);
 
                 MemoryStream chartImage = new MemoryStream();
-                List<Car> carList = new List<Car>();
+                List<Car> carList = this.iCarService.CarList();
                 string figureTitle = "Car List Figure";
 
                 fileSaveService.CreateFile(chartImage, carList, figureTitle);
@@ -560,7 +560,7 @@ namespace ServiceAuto_Client.Controller
                 FileSaveService fileSaveService = FileSaveServiceFactory.CreateFileSaveService(fileType);
 
                 MemoryStream chartImage = new MemoryStream();
-                List<Car> carList = new List<Car>();
+                List<Car> carList = this.iCarService.CarList();
                 string figureTitle = "Car List Figure";
 
                 fileSaveService.CreateFile(chartImage, carList, figureTitle);
@@ -579,7 +579,7 @@ namespace ServiceAuto_Client.Controller
                 FileSaveService fileSaveService = FileSaveServiceFactory.CreateFileSaveService(fileType);
 
                 MemoryStream chartImage = new MemoryStream();
-                List<Car> carList = new List<Car>();
+                List<Car> carList = this.iCarService.CarList();
                 string figureTitle = "Car List Figure";
 
                 fileSaveService.CreateFile(chartImage, carList, figureTitle);
