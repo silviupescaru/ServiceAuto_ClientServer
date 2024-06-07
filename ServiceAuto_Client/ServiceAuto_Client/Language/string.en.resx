@@ -171,6 +171,12 @@
   <data name="labelCriterion" xml:space="preserve">
     <value>Criterion</value>
   </data>
+  <data name="labelDefect" xml:space="preserve">
+    <value>Defect</value>
+  </data>
+  <data name="labelEngineNo" xml:space="preserve">
+    <value>EngineNo</value>
+  </data>
   <data name="labelFilterBy" xml:space="preserve">
     <value>Filter By</value>
   </data>
@@ -198,6 +204,15 @@
   <data name="labelPassword" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="labelPlateNo" xml:space="preserve">
+    <value>PlateNo</value>
+  </data>
+  <data name="labelRepairCost" xml:space="preserve">
+    <value>Repair Cost</value>
+  </data>
+  <data name="labelRepaired" xml:space="preserve">
+    <value>Repaired</value>
+  </data>
   <data name="labelRole" xml:space="preserve">
     <value>Role</value>
   </data>
@@ -212,6 +227,9 @@
   </data>
   <data name="labelUsername" xml:space="preserve">
     <value>Username</value>
+  </data>
+  <data name="labelYear" xml:space="preserve">
+    <value>Year</value>
   </data>
   <data name="messageBoxAddFail" xml:space="preserve">
     <value>Adding ended with failure!</value>
@@ -228,11 +246,17 @@
   <data name="messageBoxColorEmpty" xml:space="preserve">
     <value>Car Color is empty!</value>
   </data>
+  <data name="messageBoxDefectEmpty" xml:space="preserve">
+    <value>Defect is empty</value>
+  </data>
   <data name="messageBoxDeleteFail" xml:space="preserve">
     <value>Deleting ended with failure!</value>
   </data>
   <data name="messageBoxDeleteSuccess" xml:space="preserve">
     <value>Deleting was successful!</value>
+  </data>
+  <data name="messageBoxEngineNoEmpty" xml:space="preserve">
+    <value>Engine number is empty!</value>
   </data>
   <data name="messageBoxFileSaveSuccess" xml:space="preserve">
     <value>File saved successfully!</value>
@@ -264,6 +288,12 @@
   <data name="messageBoxPasswordEmpty" xml:space="preserve">
     <value>Password is empty!</value>
   </data>
+  <data name="messageBoxPlateNoEmpty" xml:space="preserve">
+    <value>Plate number is empty!</value>
+  </data>
+  <data name="messageBoxRepairCostEmpty" xml:space="preserve">
+    <value>Repair cost shouldn't be 0.</value>
+  </data>
   <data name="messageBoxRoleEmpty" xml:space="preserve">
     <value>Role is empty!</value>
   </data>
@@ -284,5 +314,8 @@
   </data>
   <data name="messageBoxUsernameEmpty" xml:space="preserve">
     <value>Username is empty!</value>
+  </data>
+  <data name="messageBoxYearEmpty" xml:space="preserve">
+    <value>Year is empty!</value>
   </data>
 </root>

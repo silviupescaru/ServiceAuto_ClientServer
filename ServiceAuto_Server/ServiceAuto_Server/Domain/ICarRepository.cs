@@ -12,7 +12,9 @@ namespace ServiceAuto_Server.Domain
         bool AddCar(Car car);
         bool DeleteCar(uint id);
         bool UpdateCar(Car car);
+        DataTable EmptyTable();
         DataTable CarTable();
+        DataTable CarTableBrandFuel();
         List<Car> CarList();
         List<Car> CarList_BrandFuel();
         List<Car> CarList_Owner(string owner);

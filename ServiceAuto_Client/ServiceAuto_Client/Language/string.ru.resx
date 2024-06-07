@@ -171,6 +171,12 @@
   <data name="labelCriterion" xml:space="preserve">
     <value>Критерий</value>
   </data>
+  <data name="labelDefect" xml:space="preserve">
+    <value>Дефект</value>
+  </data>
+  <data name="labelEngineNo" xml:space="preserve">
+    <value>Номер двигателя</value>
+  </data>
   <data name="labelFilterBy" xml:space="preserve">
     <value>Сортировать по</value>
   </data>
@@ -198,6 +204,15 @@
   <data name="labelPassword" xml:space="preserve">
     <value>Пароль</value>
   </data>
+  <data name="labelPlateNo" xml:space="preserve">
+    <value>Номерной знак</value>
+  </data>
+  <data name="labelRepairCost" xml:space="preserve">
+    <value>Стоимость ремонта</value>
+  </data>
+  <data name="labelRepaired" xml:space="preserve">
+    <value>Починено</value>
+  </data>
   <data name="labelRole" xml:space="preserve">
     <value>Роль</value>
   </data>
@@ -212,6 +227,9 @@
   </data>
   <data name="labelUsername" xml:space="preserve">
     <value>Имя пользователя</value>
+  </data>
+  <data name="labelYear" xml:space="preserve">
+    <value>Год</value>
   </data>
   <data name="messageBoxAddFail" xml:space="preserve">
     <value>Добавление завершилось неудачей!</value>
@@ -228,11 +246,17 @@
   <data name="messageBoxColor" xml:space="preserve">
     <value>Цвет автомобиля не указан!</value>
   </data>
+  <data name="messageBoxDefectEmpty" xml:space="preserve">
+    <value>Дефект пуст.</value>
+  </data>
   <data name="messageBoxDeleteFail" xml:space="preserve">
     <value>Удаление завершилось неудачей!</value>
   </data>
   <data name="messageBoxDeleteSuccess" xml:space="preserve">
     <value>Удаление прошло успешно!</value>
+  </data>
+  <data name="messageBoxEngineNoEmpty" xml:space="preserve">
+    <value>Номер двигателя пуст!</value>
   </data>
   <data name="messageBoxFileSaveSuccess" xml:space="preserve">
     <value>Файл успешно сохранен!</value>
@@ -264,6 +288,12 @@
   <data name="messageBoxPasswordEmpty" xml:space="preserve">
     <value>Пароль пуст!</value>
   </data>
+  <data name="messageBoxPlateNoEmpty" xml:space="preserve">
+    <value>Номерной знак пуст!</value>
+  </data>
+  <data name="messageBoxRepairCostEmpty" xml:space="preserve">
+    <value>Стоимость ремонта не должна быть равной 0.</value>
+  </data>
   <data name="messageBoxRoleEmpty" xml:space="preserve">
     <value>Роль пуста!</value>
   </data>
@@ -284,5 +314,8 @@
   </data>
   <data name="messageBoxUsernameEmpty" xml:space="preserve">
     <value>Имя пользователя пусто!</value>
+  </data>
+  <data name="messageBoxYearEmpty" xml:space="preserve">
+    <value>Год пуст</value>
   </data>
 </root>

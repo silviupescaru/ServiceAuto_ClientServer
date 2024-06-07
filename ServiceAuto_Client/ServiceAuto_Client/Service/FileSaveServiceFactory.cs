@@ -11,7 +11,9 @@ namespace ServiceAuto_Client.Service
         public enum FileType
         {
             Excel,
-            Word
+            Word,
+            JSON,
+            XML
         }
 
         public static FileSaveService CreateFileSaveService(FileType fileType)
@@ -22,6 +24,10 @@ namespace ServiceAuto_Client.Service
                     return new ExcelSaveService();
                 case FileType.Word:
                     return new WordSaveService();
+                case FileType.JSON:
+                    return new JSONSaveService();
+                case FileType.XML:
+                    return new XMLSaveService();
                 default:
                     throw new NotSupportedException("File type not supported");
             }

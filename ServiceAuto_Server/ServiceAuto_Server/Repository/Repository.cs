@@ -17,7 +17,6 @@ namespace ServiceAuto_Server.Repository
         private Repository()
         {
             string s = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=ServiceAutoClientServer_DB;Integrated Security=True;";
-            //s += "";
             this.connection = new SqlConnection(s);
         }
 

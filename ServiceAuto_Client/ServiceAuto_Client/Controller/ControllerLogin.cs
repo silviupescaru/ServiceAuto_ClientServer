@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ServiceAuto_Server.Domain;
-using ServiceAuto_Server.Repository;
+using System.Diagnostics;
 using ServiceAuto_Server.Service;
 using ServiceAuto_Client.View;
 using System.ServiceModel;
@@ -24,6 +19,7 @@ namespace ServiceAuto_Client.Controller
         {
             this.loginGUI = new LoginGUI(index);
             this.lang = new LangHelper();
+            this.lang.Add(this.loginGUI);
 
             this.createBinding();
             this.eventsManagement();
@@ -31,7 +27,7 @@ namespace ServiceAuto_Client.Controller
 
         private void createBinding()
         {
-            ChannelFactory<IUserService> channelEmployee;
+            ChannelFactory<IUserService> channelUser;
             NetTcpBinding tcp = new NetTcpBinding();
             tcp.OpenTimeout = new TimeSpan(0, 60, 0);
             tcp.SendTimeout = new TimeSpan(0, 60, 0);
@@ -42,10 +38,10 @@ namespace ServiceAuto_Client.Controller
             tcp.Security.Transport.ClientCredentialType = TcpClientCredentialType.Windows;
             tcp.Security.Transport.ProtectionLevel = System.Net.Security.ProtectionLevel.EncryptAndSign;
             string s = ConfigurationManager.ConnectionStrings["IPAdress"].ConnectionString;
-            channelEmployee = new ChannelFactory<IUserService>(tcp, "net.tcp://" + s + ":52001/User");
+            channelUser = new ChannelFactory<IUserService>(tcp, "net.tcp://" + s + ":52001/User");
             try
             {
-                this.iUserService = channelEmployee.CreateChannel();
+                this.iUserService = channelUser.CreateChannel();
             }
             catch(Exception ex)
             {
@@ -55,6 +51,7 @@ namespace ServiceAuto_Client.Controller
 
         public LoginGUI GetView()
         {
+            this.loginGUI.Show();
             return this.loginGUI;
         }
 
@@ -72,6 +69,9 @@ namespace ServiceAuto_Client.Controller
 
         private void changeLanguage(object sender, EventArgs e)
         {
+            Debug.WriteLine(this.loginGUI.GetChangeLangugae().SelectedIndex);
+
+
             if (this.loginGUI.GetChangeLangugae().SelectedIndex == 0)
             {
                 this.lang.ChangeLanguage("en");
@@ -101,7 +101,9 @@ namespace ServiceAuto_Client.Controller
                         string role = this.iUserService.GetRole(username, password);
                         if (role.Equals("Employee"))
                         {
-                            MessageBox.Show("Employee success");
+                            this.loginGUI.Hide();
+                            ControllerEmployee em = new ControllerEmployee(this.loginGUI.GetChangeLangugae().SelectedIndex);
+                            em.GetView();
                         }
                         else if (role.Equals("Manager"))
                         {

@@ -53,9 +53,27 @@ namespace ServiceAuto_Server.Repository
             return this.repository.CommandSQL(commandSQL);
         }
 
+        public DataTable EmptyTable()
+        {
+            string selectSQL = "Select * from Car where 1=0";
+            DataTable carTable = this.repository.GetTable(selectSQL);
+            if (carTable == null || carTable.Rows.Count == 0)
+                return null;
+            return carTable;
+        }
+
         public DataTable CarTable()
         {
             string selectSQL = "Select * from Car order by carID";
+            DataTable carTable = this.repository.GetTable(selectSQL);
+            if (carTable == null || carTable.Rows.Count == 0)
+                return null;
+            return carTable;
+        }
+
+        public DataTable CarTableBrandFuel()
+        {
+            string selectSQL = "Select * from [Car] order by [brand], [fuel]";
             DataTable carTable = this.repository.GetTable(selectSQL);
             if (carTable == null || carTable.Rows.Count == 0)
                 return null;
@@ -271,7 +289,7 @@ namespace ServiceAuto_Server.Repository
         private Car convertToCar(DataRow dataRow)
         {
             int id = (int)dataRow["carID"];
-            return new Car((uint)id, (string)dataRow["owner"], (string)dataRow["brand"], (string)dataRow["color"], (string)dataRow["fuel"], (int)dataRow["year"], (string)dataRow["engineNo"], (string)dataRow["plateNo"], (string)dataRow["defect"], (float)dataRow["repairCost"], (bool)dataRow["repaired"]);
+            return new Car((uint)id, (string)dataRow["owner"], (string)dataRow["brand"], (string)dataRow["color"], (string)dataRow["fuel"], Convert.ToInt32(dataRow["year"]), (string)dataRow["engineNo"], (string)dataRow["plateNo"], (string)dataRow["defect"], (float)Convert.ToDouble(dataRow["repairCost"]), Convert.ToBoolean(dataRow["repaired"]));
         }
 
     }

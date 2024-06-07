@@ -22,7 +22,13 @@ namespace ServiceAuto_Server.Service
         bool UpdateCar(Car car);
 
         [OperationContract]
+        DataTable EmptyTable();
+
+        [OperationContract]
         DataTable CarTable();
+
+        [OperationContract]
+        DataTable CarTableBrandFuel();
 
         [OperationContract]
         List<Car> CarList();

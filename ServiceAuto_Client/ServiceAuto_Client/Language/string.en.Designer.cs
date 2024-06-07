@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServiceAuto_Server.Domain.Language {
+namespace ServiceAuto_Client.Language {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ServiceAuto_Server.Domain.Language {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MVC_ServiceAuto.Model.Language.string", typeof(_string).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ServiceAuto_Client.Language.string", typeof(_string).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

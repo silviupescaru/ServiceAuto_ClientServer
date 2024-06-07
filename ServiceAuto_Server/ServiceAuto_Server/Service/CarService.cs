@@ -35,9 +35,19 @@ namespace ServiceAuto_Server.Service
             return this.iCarRepository.UpdateCar(car);
         }
 
+        public DataTable EmptyTable()
+        {
+            return this.iCarRepository.EmptyTable();
+        }
+
         public DataTable CarTable()
         {
             return this.iCarRepository.CarTable();
+        }
+
+        public DataTable CarTableBrandFuel()
+        {
+            return this.iCarRepository.CarTableBrandFuel();
         }
 
         public List<Car> CarList()
