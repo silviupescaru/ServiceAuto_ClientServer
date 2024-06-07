@@ -111,7 +111,9 @@ namespace ServiceAuto_Client.Controller
                         }
                         else if (role.Equals("Administrator"))
                         {
-                            MessageBox.Show("Admin success");
+                            this.loginGUI.Hide();
+                            ControllerAdministrator ad = new ControllerAdministrator(this.loginGUI.GetChangeLangugae().SelectedIndex);
+                            ad.GetView();
                         }
                     }
                     else MessageBox.Show("Wrong username or password");

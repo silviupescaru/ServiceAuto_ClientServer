@@ -26,7 +26,7 @@ namespace ServiceAuto_Server.Repository
             Debug.WriteLine(user.Role);
 
             string commandSQL = "insert into [User] values('";
-            commandSQL += user.Username + "','" + user.Password + "','" + user.Role;
+            commandSQL += user.Username + "','" + user.Password + "','" + user.Role + "','" + user.PhoneNumber + "','" + user.Email;
             commandSQL += "')";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -72,6 +72,8 @@ namespace ServiceAuto_Server.Repository
             string commandSQL = "update [User] set [username] = '";
             commandSQL += user.Username + "', [password] = '" + user.Password;
             commandSQL += "', [role] = '" + user.Role;
+            commandSQL += "', [phoneNumber] = '" + user.PhoneNumber;
+            commandSQL += "', [email] = '" + user.Email;
             commandSQL += "' where [userID] = '" + user.UserID + "'";
             return this.repository.CommandSQL(commandSQL);
         }
@@ -166,7 +168,7 @@ namespace ServiceAuto_Server.Repository
         private User convertToUser(DataRow dataRow)
         {
             int id = (int)dataRow["userID"];
-            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"]);
+            return new User((uint)id, (string)dataRow["username"], (string)dataRow["password"], (string)dataRow["role"], (string)dataRow["phoneNumber"], (string)dataRow["email"]);
         }
 
     }

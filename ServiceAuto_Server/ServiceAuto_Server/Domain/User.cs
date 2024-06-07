@@ -12,6 +12,8 @@ namespace ServiceAuto_Server.Domain
         protected string username;
         protected string password;
         protected string role;
+        protected string phoneNumber;
+        protected string email;
 
         public User()
         {
@@ -19,14 +21,18 @@ namespace ServiceAuto_Server.Domain
             this.username = "mike";
             this.password = "nebunu";
             this.role = "Administrator";
+            this.phoneNumber = "0740123456";
+            this.email = "test@gmail.com";
         }
 
-        public User(uint userID, string username, string password, string role)
+        public User(uint userID, string username, string password, string role, string phoneNumber, string email)
         {
             this.userID = userID;
             this.username = username;
             this.password = password;
             this.role = role;
+            this.phoneNumber = phoneNumber;
+            this.email = email;
         }
 
         public User(User user)
@@ -35,6 +41,8 @@ namespace ServiceAuto_Server.Domain
             this.username = user.username;
             this.password = user.password;
             this.role = user.role;
+            this.phoneNumber = user.phoneNumber;
+            this.email = user.email;
         }
 
         public uint UserID
@@ -59,6 +67,18 @@ namespace ServiceAuto_Server.Domain
         {
             get { return this.role; }
             set { this.role = value; }
+        }
+
+        public string PhoneNumber
+        {
+            get { return this.phoneNumber; }
+            set { this.phoneNumber = value; }
+        }
+
+        public string Email
+        {
+            get { return this.email; }
+            set { this.email = value; }
         }
 
         public override string ToString()
