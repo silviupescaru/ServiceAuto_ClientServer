@@ -41,6 +41,17 @@
             this.buttonLogout = new System.Windows.Forms.Button();
             this.labelLoggedIn = new System.Windows.Forms.Label();
             this.dataGridViewCarTable = new System.Windows.Forms.DataGridView();
+            this.carID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.owner = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.year = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.engineNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.plateNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.defect = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.repairCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.repaired = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonViewAll = new System.Windows.Forms.Button();
             this.textBoxSearchBar = new System.Windows.Forms.TextBox();
@@ -74,17 +85,8 @@
             this.comboBoxRepaired = new System.Windows.Forms.ComboBox();
             this.textBoxRepairCost = new System.Windows.Forms.TextBox();
             this.labelRepairCost = new System.Windows.Forms.Label();
-            this.carID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.owner = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.brand = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.color = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fuel = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.year = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.engineNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.plateNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.defect = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.repairCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.repaired = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonNotifyWhatsapp = new System.Windows.Forms.Button();
+            this.buttonNotifyEmail = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCarTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCarID)).BeginInit();
@@ -235,6 +237,61 @@
             this.dataGridViewCarTable.Size = new System.Drawing.Size(846, 392);
             this.dataGridViewCarTable.TabIndex = 55;
             // 
+            // carID
+            // 
+            this.carID.HeaderText = "Car ID";
+            this.carID.Name = "carID";
+            // 
+            // owner
+            // 
+            this.owner.HeaderText = "Owner";
+            this.owner.Name = "owner";
+            // 
+            // brand
+            // 
+            this.brand.HeaderText = "Brand";
+            this.brand.Name = "brand";
+            // 
+            // color
+            // 
+            this.color.HeaderText = "Color";
+            this.color.Name = "color";
+            // 
+            // fuel
+            // 
+            this.fuel.HeaderText = "Fuel";
+            this.fuel.Name = "fuel";
+            // 
+            // year
+            // 
+            this.year.HeaderText = "Year";
+            this.year.Name = "year";
+            // 
+            // engineNo
+            // 
+            this.engineNo.HeaderText = "EngineNo";
+            this.engineNo.Name = "engineNo";
+            // 
+            // plateNo
+            // 
+            this.plateNo.HeaderText = "PlateNo";
+            this.plateNo.Name = "plateNo";
+            // 
+            // defect
+            // 
+            this.defect.HeaderText = "Defect";
+            this.defect.Name = "defect";
+            // 
+            // repairCost
+            // 
+            this.repairCost.HeaderText = "Repair Cost";
+            this.repairCost.Name = "repairCost";
+            // 
+            // repaired
+            // 
+            this.repaired.HeaderText = "Repaired";
+            this.repaired.Name = "repaired";
+            // 
             // buttonSearch
             // 
             this.buttonSearch.Font = new System.Drawing.Font("Montserrat", 7.5F);
@@ -248,7 +305,7 @@
             // buttonViewAll
             // 
             this.buttonViewAll.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonViewAll.Location = new System.Drawing.Point(719, 398);
+            this.buttonViewAll.Location = new System.Drawing.Point(669, 399);
             this.buttonViewAll.Name = "buttonViewAll";
             this.buttonViewAll.Size = new System.Drawing.Size(125, 23);
             this.buttonViewAll.TabIndex = 53;
@@ -330,7 +387,7 @@
             // buttonUpdate
             // 
             this.buttonUpdate.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonUpdate.Location = new System.Drawing.Point(551, 397);
+            this.buttonUpdate.Location = new System.Drawing.Point(501, 398);
             this.buttonUpdate.Name = "buttonUpdate";
             this.buttonUpdate.Size = new System.Drawing.Size(78, 23);
             this.buttonUpdate.TabIndex = 46;
@@ -340,7 +397,7 @@
             // buttonDelete
             // 
             this.buttonDelete.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonDelete.Location = new System.Drawing.Point(630, 397);
+            this.buttonDelete.Location = new System.Drawing.Point(580, 398);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(83, 23);
             this.buttonDelete.TabIndex = 45;
@@ -350,7 +407,7 @@
             // buttonAdd
             // 
             this.buttonAdd.Font = new System.Drawing.Font("Montserrat", 7.5F);
-            this.buttonAdd.Location = new System.Drawing.Point(469, 397);
+            this.buttonAdd.Location = new System.Drawing.Point(419, 398);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(81, 23);
             this.buttonAdd.TabIndex = 44;
@@ -594,60 +651,25 @@
             this.labelRepairCost.TabIndex = 76;
             this.labelRepairCost.Text = "Repair Cost";
             // 
-            // carID
+            // buttonNotifyWhatsapp
             // 
-            this.carID.HeaderText = "Car ID";
-            this.carID.Name = "carID";
+            this.buttonNotifyWhatsapp.Font = new System.Drawing.Font("Montserrat", 7.5F);
+            this.buttonNotifyWhatsapp.Location = new System.Drawing.Point(800, 369);
+            this.buttonNotifyWhatsapp.Name = "buttonNotifyWhatsapp";
+            this.buttonNotifyWhatsapp.Size = new System.Drawing.Size(112, 23);
+            this.buttonNotifyWhatsapp.TabIndex = 78;
+            this.buttonNotifyWhatsapp.Text = "NOTIFY Whatsapp";
+            this.buttonNotifyWhatsapp.UseVisualStyleBackColor = true;
             // 
-            // owner
+            // buttonNotifyEmail
             // 
-            this.owner.HeaderText = "Owner";
-            this.owner.Name = "owner";
-            // 
-            // brand
-            // 
-            this.brand.HeaderText = "Brand";
-            this.brand.Name = "brand";
-            // 
-            // color
-            // 
-            this.color.HeaderText = "Color";
-            this.color.Name = "color";
-            // 
-            // fuel
-            // 
-            this.fuel.HeaderText = "Fuel";
-            this.fuel.Name = "fuel";
-            // 
-            // year
-            // 
-            this.year.HeaderText = "Year";
-            this.year.Name = "year";
-            // 
-            // engineNo
-            // 
-            this.engineNo.HeaderText = "EngineNo";
-            this.engineNo.Name = "engineNo";
-            // 
-            // plateNo
-            // 
-            this.plateNo.HeaderText = "PlateNo";
-            this.plateNo.Name = "plateNo";
-            // 
-            // defect
-            // 
-            this.defect.HeaderText = "Defect";
-            this.defect.Name = "defect";
-            // 
-            // repairCost
-            // 
-            this.repairCost.HeaderText = "Repair Cost";
-            this.repairCost.Name = "repairCost";
-            // 
-            // repaired
-            // 
-            this.repaired.HeaderText = "Repaired";
-            this.repaired.Name = "repaired";
+            this.buttonNotifyEmail.Font = new System.Drawing.Font("Montserrat", 7.5F);
+            this.buttonNotifyEmail.Location = new System.Drawing.Point(800, 397);
+            this.buttonNotifyEmail.Name = "buttonNotifyEmail";
+            this.buttonNotifyEmail.Size = new System.Drawing.Size(112, 23);
+            this.buttonNotifyEmail.TabIndex = 79;
+            this.buttonNotifyEmail.Text = "NOTIFY Email";
+            this.buttonNotifyEmail.UseVisualStyleBackColor = true;
             // 
             // EmployeeGUI
             // 
@@ -656,6 +678,8 @@
             this.BackgroundImage = global::ServiceAuto_Client.Properties.Resources.employeeBG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1514, 963);
+            this.Controls.Add(this.buttonNotifyEmail);
+            this.Controls.Add(this.buttonNotifyWhatsapp);
             this.Controls.Add(this.textBoxRepairCost);
             this.Controls.Add(this.labelRepairCost);
             this.Controls.Add(this.comboBoxRepaired);
@@ -768,5 +792,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn defect;
         private System.Windows.Forms.DataGridViewTextBoxColumn repairCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn repaired;
+        private System.Windows.Forms.Button buttonNotifyWhatsapp;
+        private System.Windows.Forms.Button buttonNotifyEmail;
     }
 }

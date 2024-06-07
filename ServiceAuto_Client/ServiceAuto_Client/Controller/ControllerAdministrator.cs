@@ -8,10 +8,15 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace ServiceAuto_Client.Controller
@@ -68,6 +73,60 @@ namespace ServiceAuto_Client.Controller
             this.vAdministrator.GetLogoutButton().Click += new EventHandler(logout);
             this.vAdministrator.GetUserTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setUserControls);
             this.vAdministrator.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
+        }
+
+        private void notifyRepairedWhatsapp(object sender, EventArgs e)
+        {
+            try
+            {
+                if (this.vAdministrator.GetUserTable().SelectedRows.Count > 0)
+                {
+                    DataGridViewRow drvr = this.vAdministrator.GetUserTable().SelectedRows[0];
+
+
+
+                        TwilioClient.Init(".", "..");
+
+                        var message = MessageResource.Create(
+                            from: new Twilio.Types.PhoneNumber("whatsapp:+12292109286"),
+                            to: new Twilio.Types.PhoneNumber("whatsapp:+40765211258"),
+                            body: "Your car has been repaired!"
+                            );
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void notifyRepairedEmail(object sender, EventArgs e)
+        {
+            try
+            {
+
+                using (System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage())
+                {
+                    mail.From = new MailAddress("baldnikobellic@gmail.com");
+                    mail.To.Add("prowhite91@gmail.com");
+                    mail.Subject = "Hello World";
+                    mail.Body = "<h1>Your car has been repaired</h1>";
+                    mail.IsBodyHtml = true;
+
+                    using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                    {
+                        smtp.Credentials = new NetworkCredential("baldnikobellic@gmail.com", "olacikita");
+                        smtp.EnableSsl = true;
+                        smtp.Send(mail);
+                    }
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
 
         public AdministratorGUI GetView()

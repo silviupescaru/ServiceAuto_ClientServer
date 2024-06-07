@@ -165,6 +165,16 @@ namespace ServiceAuto_Client.View
             return this.buttonLogout;
         }
 
+        public Button GetNotifyWhatsappButton()
+        {
+            return this.buttonNotifyWhatsapp;
+        }
+
+        public Button GetNotifyEmailButton()
+        {
+            return this.buttonNotifyEmail;
+        }
+
         public PictureBox GetPictureBox()
         {
             return this.pictureBoxCar;

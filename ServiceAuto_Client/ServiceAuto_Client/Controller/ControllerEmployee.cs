@@ -15,7 +15,13 @@ using ServiceAuto_Client.Service;
 using ServiceAuto_Server.Domain;
 using ServiceAuto_Server.Repository;
 using ServiceAuto_Server.Service;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net.Mail;
+using Microsoft.Office.Interop.Word;
+using System.Net;
 
 namespace ServiceAuto_Client.Controller
 {
@@ -80,6 +86,8 @@ namespace ServiceAuto_Client.Controller
             this.employeeGUI.GetSaveJSONButton().Click += new EventHandler(saveJSON);
             this.employeeGUI.GetSaveXMLButton().Click += new EventHandler(saveXML);
             this.employeeGUI.GetSaveDOCButton().Click += new EventHandler(saveDOC);
+            this.employeeGUI.GetNotifyWhatsappButton().Click += new EventHandler(notifyRepairedWhatsapp);
+            this.employeeGUI.GetNotifyEmailButton().Click += new EventHandler(notifyRepairedEmail);
             this.employeeGUI.GetLogoutButton().Click += new EventHandler(logout);
             this.employeeGUI.GetCarTable().RowStateChanged += new DataGridViewRowStateChangedEventHandler(setCarControls);
             this.employeeGUI.GetLanguageBox().SelectedIndexChanged += new EventHandler(changeLanguage);
@@ -590,6 +598,63 @@ namespace ServiceAuto_Client.Controller
                 login.GetView();
                 this.employeeGUI.Hide();
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void notifyRepairedWhatsapp(object sender, EventArgs e)
+        {
+            try
+            {
+                if(this.employeeGUI.GetCarTable().SelectedRows.Count > 0)
+                {
+                    DataGridViewRow drvr = this.employeeGUI.GetCarTable().SelectedRows[0];
+
+                    bool repaired = Convert.ToBoolean(drvr.Cells[10].Value);
+
+                    if (repaired == true) 
+                    {
+
+                        TwilioClient.Init(".", "..");
+
+                        var message = MessageResource.Create(
+                            from: new Twilio.Types.PhoneNumber("whatsapp:+12292109286"),
+                            to: new Twilio.Types.PhoneNumber("whatsapp:+40765211258"),
+                            body: "Your car has been repaired!"
+                            );
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void notifyRepairedEmail(object sender, EventArgs e)
+        {
+            try
+            {
+
+                using (System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage())
+                {
+                    mail.From = new MailAddress("baldnikobellic@gmail.com");
+                    mail.To.Add("prowhite91@gmail.com");
+                    mail.Subject = "Hello World";
+                    mail.Body = "<h1>Your car has been repaired</h1>";
+                    mail.IsBodyHtml = true;
+
+                    using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                    {
+                        smtp.Credentials = new NetworkCredential("baldnikobellic@gmail.com", "olacikita");
+                        smtp.EnableSsl = true;
+                        smtp.Send(mail);
+                    }
+                }
+            }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
